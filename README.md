@@ -7,6 +7,12 @@
 
 ## Install
 
+Cd to project directory
+
+```
+cd denteez
+```
+
 Install dependencies
 
 ```
