@@ -3,7 +3,7 @@
 ## gh-pages links
 
 * [Services page](http://gosytnik.com/public/service)
-* [Contact page](http://gosytnik.com/public/service) 
+* [Contact page](http://gosytnik.com/public/contact) 
 
 ## Install
 
