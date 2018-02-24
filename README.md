@@ -6,7 +6,7 @@
 * [Contact page](http://gosytnik.com/public/contact) 
 
 ## Install
-
+You will need a Node version 8
 Cd to project directory
 
 ```
