@@ -34,7 +34,7 @@ class Form extends Component {
     }
 
     getOptions = () => {
-        return fetch(`http://504080.com/api/v1/directories/enquiry-types`)
+        return fetch(`https://504080.com/api/v1/directories/enquiry-types`)
             .then((response) => {
                 return response.json();
             }).then((result) => {
@@ -169,7 +169,7 @@ class Form extends Component {
         form.append('subject', this.state.subject);
         form.append('description', this.state.description);
 
-        fetch('http://504080.com/api/v1/support', {
+        fetch('https://504080.com/api/v1/support', {
             body: form,
             method: 'POST'
         }).then(res => {

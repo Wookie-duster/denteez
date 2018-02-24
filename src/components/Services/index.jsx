@@ -20,7 +20,7 @@ class Services extends Component {
     }
 
     fetchCategories = () => {
-        fetch('http://504080.com/api/v1/services/categories', {
+        fetch('https://504080.com/api/v1/services/categories', {
             headers: {
                 'Authorization': this.AUTH_TOKEN
             },
