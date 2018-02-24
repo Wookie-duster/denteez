@@ -1,5 +1,6 @@
+const webpack = require('webpack');
 const path = require('path');
-const UglifyJsPlugin = require('uglifyjs-webpack-plugin')
+const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 const SRC_DIR = path.resolve(__dirname, 'src');
 const DIST_DIR = path.resolve(__dirname, 'public');
@@ -15,15 +16,18 @@ module.exports = {
         publicPath: '/assets/'
     },
     // production
-    plugins: [
-        new UglifyJsPlugin({
-            uglifyOptions: {
-                minimize: true,
-                warnings: false,
-                compress: true,
-            }
-        })
-    ],
+    // plugins: [
+    //     new UglifyJsPlugin({
+    //         uglifyOptions: {
+    //             minimize: true,
+    //             warnings: false,
+    //             compress: true,
+    //         }
+    //     }),
+    //     new webpack.DefinePlugin({
+    //         'process.env.NODE_ENV': JSON.stringify('production')
+    //     }),
+    // ],
     module: {
         rules: [{
                 test: /\.(js|jsx)$/,
