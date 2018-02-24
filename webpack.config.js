@@ -15,15 +15,15 @@ module.exports = {
         publicPath: '/assets/'
     },
     // production
-    // plugins: [
-    //     new UglifyJsPlugin({
-    //         uglifyOptions: {
-    //             minimize: true,
-    //             warnings: false,
-    //             compress: true,
-    //         }
-    //     })
-    // ],
+    plugins: [
+        new UglifyJsPlugin({
+            uglifyOptions: {
+                minimize: true,
+                warnings: false,
+                compress: true,
+            }
+        })
+    ],
     module: {
         rules: [{
                 test: /\.(js|jsx)$/,
