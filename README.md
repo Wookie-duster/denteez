@@ -20,5 +20,6 @@ npm run start
 ```
 
 
-[localhost:8080](http://localhost:8080/service.html) 
+[http://localhost:8080/service.html](http://localhost:8080/service.html) 
+[http://localhost:8080/contact.html](http://localhost:8080/contact.html) 
 
