@@ -21,6 +21,5 @@ npm run start
 
 Start project
 
-```
 [localhost:8080](http://localhost:8080/service.html) 
-```
+
