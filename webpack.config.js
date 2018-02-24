@@ -14,16 +14,16 @@ module.exports = {
         path: `${DIST_DIR}/assets/`,
         publicPath: '/assets/'
     },
-    //production
-    plugins: [
-        new UglifyJsPlugin({
-            uglifyOptions: {
-                minimize: true,
-                warnings: false,
-                compress: true,
-            }
-        })
-    ],
+    // production
+    // plugins: [
+    //     new UglifyJsPlugin({
+    //         uglifyOptions: {
+    //             minimize: true,
+    //             warnings: false,
+    //             compress: true,
+    //         }
+    //     })
+    // ],
     module: {
         rules: [{
                 test: /\.(js|jsx)$/,

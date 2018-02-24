@@ -9,7 +9,7 @@ import ModalWindow from '../Modal';
 
 class Services extends Component {
     
-    AUTH_TOKEN = 'a4c8494b2766f315c89fa367cdc779f317f624e1';
+    AUTH_TOKEN = '788f7b202758c18bad684c4876a30b720d8da798';
 
     state = {
         categories: [],
@@ -20,7 +20,7 @@ class Services extends Component {
     }
 
     fetchCategories = () => {
-        fetch('https://504080.com/api/v1/services/categories', {
+        fetch('http://504080.com/api/v1/services/categories', {
             headers: {
                 'Authorization': this.AUTH_TOKEN
             },
