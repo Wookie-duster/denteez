@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import TextEllipsis from 'react-text-ellipsis';
+import Dotdotdot from 'react-dotdotdot';
 
 import './index.scss';
 
@@ -65,7 +65,7 @@ class Services extends Component {
                         
                         return <a key={i} href="" className="content__service">
                             <div className="content__service__img"><img src={'http://' + item.icon} alt=""/></div>
-                            <TextEllipsis tag={'p'} tagClass={'content__service__title'} lines={2}>{item.title}</TextEllipsis>
+                            <Dotdotdot tagName={'p'} clamp={2} className="content__service__title">{item.title}</Dotdotdot>
                         </a>
                     })}
                 </div>
