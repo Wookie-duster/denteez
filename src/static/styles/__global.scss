@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'ProximaNovaRegular';
+    src: url('../fonts/ProximaNova-Regular.woff') format('woff');
+}
+@font-face {
+    font-family: 'ProximaNovaLight';
+    src: url('../fonts/ProximaNova-Light.woff') format('woff');
+}
+
+body {
+    font-family: 'ProximaNovaRegular';
+    overflow: auto;
+}
+
+.jumbotron__content__wrap, .about__title {
+    font-family: 'ProximaNovaLight';
+}
+
+.wrap {
+    min-width: 970px;
+    // max-width: 970px;
+    
+    max-width: 1440px;
+
+    margin: 0 auto;
+}

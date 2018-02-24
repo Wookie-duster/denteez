@@ -1,0 +1,93 @@
+@import '../../static/styles/__vars.scss';
+
+$borderColor: #71973c;
+
+.header {
+    background-color: $green;
+
+    border-bottom: 2px solid $borderColor;
+    box-sizing: border-box;
+
+    .wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        padding: 10px 15px 11.56px;
+        width: 132px;
+
+        text-align: center;
+
+        &__img {
+            width: 100%;
+        }
+    }
+
+    .bar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        position: relative;
+
+        padding: 0 15px;
+
+        width: 58%;
+
+        &__search {
+            padding: 0 0 0 35px;
+            
+            min-width: 400px;
+            height: 35px;
+            width: 75%;
+
+            background-color: $borderColor;
+            color: $whiteText;
+
+            border: none;
+            border-radius: 3px;
+
+            &::placeholder {
+                color: $whiteText;
+            }
+
+        }
+
+        &:after {
+            position: absolute;
+            content: '';
+            left: 27px;
+            top: 27px;
+            width: 15px;
+            height: 15px;
+            background: url("../../static/img/search.png") no-repeat;
+        }
+
+        &__notifications {
+            
+            &__item {
+                margin: 0 0 0 20px;
+            }
+        }
+    }
+
+    &__user {
+        display: flex;
+        align-items: center;
+
+        padding: 0 15px;
+
+        width: 213px;
+
+        text-decoration: none;
+
+        &__name {
+            display: block;
+            margin: 0 0 0 11px;
+
+            font-size: 16px;
+            color: $whiteText;
+        }
+    }
+}

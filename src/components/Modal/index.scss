@@ -1,0 +1,54 @@
+@import '../../static/styles/__vars.scss';
+
+.modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(0,0,0,.6);
+
+    &__body {
+        position: relative;
+
+        padding: 50px 30px;
+
+        width: 400px;
+
+        text-align: center;
+        background-color: $whiteText;
+
+        &__title {
+            font-size: 18px;
+        }
+
+        &__close {
+            position: absolute;
+
+            right: 10px;
+            top: 10px;
+
+            cursor: pointer;
+            
+            &__img {
+                width: 30px;
+                height: 30px;
+
+                &:hover {
+                    transform: scale(1.4);
+                }
+            }
+
+            
+        }
+    }
+}

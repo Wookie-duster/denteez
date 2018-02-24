@@ -1,0 +1,223 @@
+@import '../../static/styles/__vars.scss';
+
+.main {
+
+    .wrap {
+        display: flex;
+        
+        .sidebar {
+            padding: 0 15px;
+    
+            width: 212px;
+            
+            .navigation {
+                // padding: 0 0 10px 0;
+
+                &__list {
+                    margin: 0;
+                    padding: 0;
+                    
+                    list-style: none;
+
+                    &__item {
+                        position: relative;
+
+                        height: 50px;
+
+                        border-bottom: 1px solid $grey;
+                        box-sizing: border-box;
+
+                        &:last-child {
+                            border-bottom: none;
+                        }
+
+                        .link {
+                            display: flex;
+                            align-items: center;
+
+                            
+
+                            height: 50px;
+                            
+                            color: $greyText;
+                            text-decoration: none;
+
+                            &__text {
+                                margin: 0 0 0 25px;
+                            }
+
+                            &:after {
+                                content: '';
+                                
+                                display: block;
+                                position: absolute;
+                                bottom: -1px;
+                                left: 0;
+    
+                                height: 1px;
+                                width: 0;
+    
+                                background-color: $green;
+    
+                                z-index: 999;
+                                transition: all .2s ease;
+                            }
+
+                            &:hover {
+                                &:after {
+                                    width: 100%;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    
+        .content {
+            padding: 10px 0;
+
+            width: calc(100% - 228px*2);
+            height: 200px;
+    
+            background-color: blue;
+        }
+    }
+
+}
+
+.advertisement {
+    padding: 0 0 18px;
+
+    border-top: 1px solid $grey;
+    box-sizing: border-box;
+
+    &__img {
+        width: 100%;
+    }
+
+    &__description {
+        margin: 8px 0 0;
+
+        color: $adDesc;
+        font-size: 11px;
+    }
+}
+
+.sidebar {
+    &__title {
+        margin: 20px 0;
+
+        font-size: 14px;
+        color: $adGreyText;
+    }
+
+}
+
+.sidebar--right {
+    .featured:first-child {
+        border: none;
+    }
+}
+
+.featured {
+    border-top: 1px solid $grey;
+    box-sizing: border-box;
+
+    &__action {
+        float: right;
+
+        font-size: 14px;
+
+        text-decoration: none;
+        color: $blackText;
+
+        transition: all .3s ease;
+
+        &:hover {
+            color: $green;
+        }
+    }
+
+    &__item {
+        display: flex;
+        align-items: flex-start;
+
+        margin: 0 0 20px;
+
+        &__img {
+            max-width: 80px;
+            height: auto;
+        }
+
+        &__title {
+            margin: 0 0 0;
+
+            font-size: 16px;
+            color: $blackText;
+        }
+
+        &__description {
+            margin: 0 0 0 10px;
+
+            &__text {
+                margin: 0 0 0;
+
+                font-size: 14px;
+                line-height: 1.2;
+                color: $greyText;
+                  
+            }
+
+            &__action {
+                margin: 0 0 0;
+
+                font-size: 12px;
+                color: $blackText;
+                text-decoration: none;
+
+                transition: all .3s ease;
+
+                &:hover {
+                    color: $green;
+                }
+            }
+        }
+    }
+}
+
+.copyrights {
+    border-top: 1px solid $grey;
+    box-sizing: border-box;
+
+    &__title {
+        font-size: 12px;
+        color: $grey;
+        margin: 18px 0;
+        word-wrap: break-word;
+        word-break: break-all;
+    }
+
+    &__block {
+        &__link {
+            margin: 0 0 0 20px;
+
+            font-size: 12px;
+            color: $grey;
+            text-decoration: none;
+
+            transition: all .3s ease;
+
+            
+
+            &:hover {
+                color: $green;
+            }
+
+            &:first-child {
+                margin: 0;
+            }
+        }
+        
+    }
+}

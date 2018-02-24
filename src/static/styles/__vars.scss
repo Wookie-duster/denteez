@@ -1,0 +1,38 @@
+//vars
+$green: #87b448;
+$grey: #e0e2e6;
+$whiteText: #fefefe;
+$greyText: #59606b;
+$adGreyText: #7c8695;
+$adDesc: #d3d3d3;
+$blackText: #1c2534;
+$greenHover: #94c54f;
+
+
+//mixins
+
+//multiline
+@mixin multiLineEllipsis($lineHeight: 1.2em, $lineCount: 1, $bgColor: white) {
+    overflow: hidden;
+    position: relative;
+    line-height: $lineHeight;
+    max-height: $lineHeight * $lineCount;
+    text-align: center;
+    margin-right: -1em;
+    padding-right: 1em;
+    &:before {
+        content: '...';
+        position: absolute;
+        right: 6px;
+        bottom: 0;
+    }
+    &:after {
+        content: '';
+        position: absolute;
+        right: 0;
+        width: 1em;
+        height: 1em;
+        margin-top: 0.2em;
+        background: $bgColor;
+    }
+}

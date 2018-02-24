@@ -1,0 +1,84 @@
+@import '../../static/styles/__vars.scss';
+
+.contact {
+
+}
+
+.jumbotron {
+    padding: 0 0 100px;
+
+    background: url('../../static/img/dentist-backgound.png') no-repeat;
+    background-size: cover;
+
+    &__header {
+        padding: 0 40px 0 50px;
+
+        height: 80px;
+
+        display: flex;
+        justify-content: space-between;
+        
+        &__link {
+            align-self: flex-end;
+        }
+
+        &__logo {
+            width: 130px;
+            height: 40px;
+        }
+
+        &__btn {
+            align-self: flex-end;
+
+            padding: 7px 20px;
+
+            font-size: 14px;
+            text-decoration: none;
+            color: $whiteText;
+            background-color: $green;
+
+            border-radius: 5px;
+
+            &:hover {
+                background-color: $greenHover;
+            }
+        }
+    }
+
+    &__content {
+        height: 330px;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &__wrap {
+            text-align: center;
+
+            max-width: 485px;
+        }
+
+        &__title {
+            margin: 0;
+
+            font-family: 'ProximaNovaLight';
+            font-size: 48px;
+            line-height: 0.625;
+
+            color: $whiteText;
+        }
+
+        &__description {
+            margin: 25px 0 0;
+
+            font-size: 20px;
+            line-height: 1.5;
+            
+            color: $whiteText;
+        }
+    }
+}
+.main {
+    background: url('../../static/img/contact-backgound.png') no-repeat;
+    background-size: cover;
+}

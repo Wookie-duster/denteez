@@ -1,0 +1,33 @@
+@import '../../static/styles/__vars.scss';
+
+.about {
+    padding: 100px 0 115px;
+    &__wrap {
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+
+    &__flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__title {
+        margin: 0 0 40px;
+        text-align: center;
+        font-size: 30px;
+        color: $blackText;
+    }
+
+    &__text {
+        margin: 0;
+        max-width: 600px;
+        line-height: 1.5;
+        font-size: 16px;
+        color: $adGreyText;
+          
+        &:nth-child(2) {
+            margin: 0 0 0 80px;
+        }
+    }
+}
