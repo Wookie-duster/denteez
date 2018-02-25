@@ -6,7 +6,6 @@
 * [Contact page](http://gosytnik.com/public/contact) 
 
 ## Install
-You will need a Node version 8
 
 Clone project
 
