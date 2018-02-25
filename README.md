@@ -8,6 +8,12 @@
 ## Install
 You will need a Node version 8
 
+Clone project
+
+```
+git clone https://github.com/Wookie-duster/denteez.git
+```
+
 Cd to project directory
 
 ```
