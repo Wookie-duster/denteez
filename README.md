@@ -5,7 +5,7 @@
 Clone project
 
 ```
-git clone https://github.com/Wookie-duster/denteez.git
+git clone https://github.com/sytnikk/denteez.git
 ```
 
 Cd to project directory
